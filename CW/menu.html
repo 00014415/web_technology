@@ -4,68 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KARVON</title>
+    <title>KARVON RESTAURANT</title>
     <link rel="shortcut icon" href="images/1logo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+
+    <!--HEADER-->
     <header>
-        
-        <nav class="header_nav">
-            <div class="container header_nav-content">
-                <a href="#" class="logo">
-                    <img src="images/logo.png" alt="KARVON" class="logo_img">
-                </a>
-             <ul class="header_list">
-                <li><a href="home.html" class="header_link">Home</a></li>
-                <li><a href="menu.html" class="header_link">Menu</a></li>
-                <li><a href="gallery.html" class="header_link">Gallery</a></li>
-                <li><a href="popular.html" class="header_link">Popular</a></li>
-                <li><a href="about.html" class="header_link">About</a></li>
-                <li><a href="contact.html" class="header_link">Contact</a></li>
-             </ul>
-           </div>
-         </nav>
-    </header>
+		<a href="#" class="logo">KARVON<span>.</span></a>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu" id="myTopnav">
+			<li><a href="home.html" onclick="toggleMenu();">Home</a></li>
+			<li><a href="menu.html" onclick="toggleMenu();">Menu</a></li>
+			<li><a href="gallary.html" onclick="toggleMenu();">Gallary</a></li>
+			<li><a href="popular.html" onclick="toggleMenu();">Popular</a></li>
+			<li><a href="about.html" onclick="toggleMenu();">About</a></li>
+			<li><a href="contact.html" onclick="toggleMenu();">Contact</a></li>
+		</ul>
+	</header>
 
 	<!-- Menu Items -->
 
-    <section class="menu" id="menu">
-        <div class="menu_item">
-            <div class="icon">
-                <img src="images/menu/dishes.jfif" alt="Dishes"
-                 class="menu_img"></div>
-            <h4>Dishes</h4>
-            <h5>Lorem ipsum dolor sit amet,
-             consectetur adipisicing elit</h5>
-            <a href="#">view more</a>
-        </div>
-        
-        <div class="menu_item">
-            <div class="icon">
-                <img src="images/menu/chef1.jpg" alt="Chef"
-                 class="menu_img"></div>
-            <h4>Chief</h4>
-            <h5>Lorem ipsum dolor sit amet,
-             consectetur adipisicing elit</h5>
-            <a href="#">view more</a>
-        </div>
+	<section class="menu_items" id="menu">
+		<div class="m_box">
+			<div class="icon"><i class="fas fa-star"></i></div>
+			<h4>Delicious Food</h4>
+			<h5>Taste Now!</h5>
+			<a href="#">view more</a>
+		</div>
+		
+		<div class="m_box">
+			<div class="icon"><i class="fas fa-hat-chef"></i></div>
+			<h4>Top Chefs</h4>
+			<h5>Our Team</h5>
+			<a href="#">view more</a>
+		</div>
 
-    <div class="menu_item">
-        <div class="icon">
-              <img src="images/menu/nice experience.jpg" 
-               alt="Nice Experience" class="menu_img"></div>
-        <h4>Nice Experience</h4>
-        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-        <a href="#">view more</a>
-    </div>
-</section>
-
-  <!--     Popular Items     -->
+		<div class="m_box">
+			<div class="icon"><i class="fas fa-heart"></i></div>
+			<h4>Nice Experience</h4>
+			<h5>Our Achievements</h5>
+			<a href="#">view more</a>
+		</div>
+	</section>
 
 
 
+
+
+      <!--    FOOTER       -->
+
+
+    
+	<footer class="footer">
+		<div class="footer_left">
+			<img src="images/logo.png" alt="Logo">
+			<p>Located in Khorezm. <br>
+			   We love your Smile</p>
+			<br>
+			<div class="f_socials">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-dribbble"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-github"></i></a>
+			</div>
+		</div>
+
+		<ul class="footer_right">
+			<li>
+				<h2>Menu</h2>
+
+				<ul class="f_box">
+					<li><a href="#">Asian</a></li>
+					<li><a href="#">Italian</a></li>
+					<li><a href="#">American</a></li>
+					<li><a href="#">Japanese</a></li>
+				</ul>
+			</li>
+
+			<li class="f_features">
+				<h2>Branches soon!</h2>
+
+				<ul class="f_box">
+					<li><a href="#">Bukhara</a></li>
+					<li><a href="#">Samarqand</a></li>
+					<li><a href="#">Andijan</a></li>
+					<li><a href="#">Tashkent</a></li>
+					
+				</ul>
+			</li>
+
+
+			<li class="f_address">
+				<h2>Main address</h2>
+
+				<ul class="f_box">
+					<li><a href="#">Khiva Khorezm</a></li>
+					<li><a href="#">Open Hours:<br>
+						Monday-Sunday<br>09:00AM-23:00PM</a></li>
+					<li><a href="#"><span class="__cf_email__" data-cfemail="066f6860694640696962">[email&#160;protected]</span></a></li>
+					<li><a href="#">+97 518-32-32</a></li>
+					
+				</ul>
+			</li>
+
+
+		</ul>
+	</footer>
+
+
+
+
+
+    
+	<!-- Navbar sticky Script-->
+	<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY > 0);
+		});
+
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu');
+			menuToggle.classList.toggle('active');
+			menu.classList.toggle('active');
+		}
+	</script>
 
 
 </body>
