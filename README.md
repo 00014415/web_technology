@@ -8,6 +8,9 @@ Aprat from that, clients can also text directly to the restaurant to know about 
 # project link:
 https://github.com/00014415/web_technology.git 
 
+#Link to website
+https://wiut14415.netlify.app/
+
 
 # Pages
 There are 6 various kind of pages. And they are
